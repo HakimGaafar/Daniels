@@ -1,0 +1,624 @@
+:root{
+    --main-color: #1C1C1C ;
+    --main-font:'Poppins', sans-serif;
+    --head-font:'Montserrat', sans-serif;
+}
+body{
+    font-family:var(--main-font) ;
+}
+h1,h2,h3,h4,h5,h6,.logo{
+    font-family: var(--head-font);
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+  }
+  /* ///////////////////////////////////// */
+  #navbar .active{
+    color: var(--main-color);
+}
+#navbar .nav-item .active{
+    position: relative;
+     
+}
+
+#navbar .nav-item a::after{
+    content: '';
+    width: 85%;
+    height: 2px;
+    background-color:var(--main-color);
+    bottom: 0px;
+    right: 100%;
+    position: absolute;
+    
+}
+#navbar  .nav-item .active:after{
+    right:0;
+}
+
+/* /////////////////////// */
+#home{
+    background-image: url('../imgs/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#home .home-layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+#home .home-layer .home-context{
+    color: aliceblue;
+}
+
+#home .home-layer .home-context .home-animation{
+    position: relative;
+    
+}
+#home .home-layer .home-context ul a{
+    color: aliceblue;
+    
+}
+
+#home .home-layer .home-context ul span{
+    background-color: #06141C;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+}
+#home .home-layer .home-context .home-animation::after{
+    content: '';
+    font-size: 50px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: title 8s infinite ;
+    width: 100%;
+    
+}
+/* I wanted to make space between Larry Daniels but couldn't , I tried everything 
+so I will leave it without spaces because with the space in the content it will be like this:
+larry
+    Daniels|
+so it looks bad.    
+*/
+@keyframes title {
+    0%{
+        content: '|';
+    }
+    2%{
+        content: 'La|';
+    }
+    4%{
+        content: 'Larr|';
+    }
+    6%{
+        content: 'Larry|';
+    }
+    8%{
+        content: 'Larry' 'Da|';
+    }
+    10%{
+        content: 'Larry' 'Dani|';
+    }
+    12%{
+        content: 'Larry' 'Daniel|';
+    }
+    14%{
+        content: 'Larry' 'Daniels|';
+    }
+    16%{
+        content: 'Larry' 'Daniel|';
+    }
+    18%{
+        content: 'Larry' 'Dani|';
+    }
+    20%{
+        content: 'Larry' 'Da|';
+    }
+    22%{
+        content: 'Larry|';
+    }
+    24%{
+        content: 'Larr|';
+    }
+    26%{
+        content: 'La|';
+    }
+    28%{
+        content: '|';
+    }
+    30%{
+        content: 'D|';
+    }
+    32%{
+        content: 'Dev|';
+    }
+    34%{
+        content: 'Deve|';
+    }
+    36%{
+        content: 'Devel|';
+    }
+    38%{
+        content: 'Develo|';
+    }
+    40%{
+        content: 'Develop|';
+    }
+    42%{
+        content: 'Develope|';
+    }
+    44%{
+        content: 'Developer|';
+    }
+    46%{
+        content: 'Develope|';
+    }
+    48%{
+        content: 'Develop|';
+    }
+    50%{
+        content: 'Develo|';
+    }
+    52%{
+        content: 'Devel|';
+    }
+    54%{
+        content: 'Deve|';
+    }
+    56%{
+        content: 'Dev|';
+    }
+    58%{
+        content: 'De|';
+    }
+    60%{
+        content: 'D|';
+    }
+    62%{
+        content: '|';
+    }
+    64%{
+        content: 'D|';
+    }
+    66%{
+        content: 'De|';
+    }
+    68%{
+        content: 'Des|';
+    }
+    70%{
+        content: 'Desi|';
+    }
+    72%{
+        content: 'Desig|';
+    }
+    74%{
+        content: 'Design|';
+    }
+    76%{
+        content: 'Designe|';
+    }
+    78%{
+        content: 'Designer|';
+    }
+    80%{
+        content: 'Designe|';
+    }
+    82%{
+        content: 'Design|';
+    }
+    84%{
+        content: 'Desig|';
+    }
+    86%{
+        content: 'Desi|';
+    }
+    88%{
+        content: 'Des|';
+    }
+    90%{
+        content: 'De|';
+    }
+    92%{
+        content: 'De|';
+    }
+    94%{
+        content: 'D|';
+    }
+    100%{
+        content: '|';
+    }
+}
+/* ////////////////////////////// */
+#about  .about-img{
+    position: relative;
+}
+#about .about-img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+#about .about-text span{
+    color: #A69999;
+}
+
+#about .about-text p b{
+    color:#748182 ;
+}
+#about .about-text .progress{
+    height: 25px;
+}
+#about .about-text .btn-1{
+    border: 2px solid black;
+    background-color: black;
+}
+
+#about .about-text .btn-1 span{
+    color: aliceblue;
+    
+}
+#about .about-text .btn-2 {
+    
+    border: 2px solid black;
+}
+#about .about-text .btn-2 span{
+    
+    color: black;
+}
+#about .about-text :hover.btn-1 {
+    background-color: aliceblue;
+}
+#about .about-text :hover.btn-1 span{
+    color: black;
+    
+}
+#about .about-text :hover.btn-2 {
+    background-color: black;
+}
+#about .about-text :hover.btn-2 span{
+    color: aliceblue;
+    
+}
+
+/* /////////////////////////// */
+#services {
+    background-color: #F7F7F7;
+}
+#services .services-body span{
+    background-color: #F7F7F7;
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+}
+
+
+#services .services-body .design{
+    
+    text-align: center;
+    width: 32%;
+    margin-bottom: 10px;
+    box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+    border-radius: 5%;
+}  
+#services .services-body .design span{
+    transition: background-color 1s 0.1s;
+    
+}
+#services .services-body .design span i{
+    transition: color 1s 0.1s;
+}
+
+#services .services-body .design:hover span i{
+    color: aliceblue;
+
+}
+
+#services .services-body .design:hover span{
+   
+    background-color: var(--main-color);
+}
+#services .services-body .design p{
+    color: #748182;
+}
+#services .services-head  {
+    position: relative;
+    width: 20%;
+    margin: auto;
+}
+#services .services-head h2::after{
+    content: "";
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: 2;
+}
+
+/* /////////////////////////// */
+/* /////////////////////////// */
+#works .works-head{
+    position: relative;
+    width: 20%;
+    margin: auto;
+}
+#works .works-head h2::after{
+    content: "";
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: 2;
+}
+
+#works .works-body .nav-link{
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
+#works .works-body .nav-item .active{
+    color: black;
+    background-color: transparent;
+}
+#works .works-body .nav-item .nav-link{
+    position: relative;
+}
+#works .works-body .nav-item .nav-link.active span::after{
+    content: '';
+    background-color: var(--main-color);
+    width: 60%;
+    height: 2px;
+    bottom: 2px;
+    right: 18%;
+    position: absolute;
+
+}
+
+#works .works-image{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+#works .works-image img{
+    transition: all 0.2s;
+    
+}
+
+#works .works-layer{
+    position: absolute;
+    background-color: #FDFDFD;
+    width: 90%;
+    height: 90%;
+    top: 100%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 1s 0.1s;
+}
+#works .works-image:hover .works-layer{
+    top: 5%;
+}
+#works .works-layer .layer-context2{
+    text-align: center;
+    color: black;
+    font-family: 300;
+}
+#works .works-layer .layer-context2 span{
+    color: black;
+    margin: 5px;
+}
+#works .works-layer span a{
+    color: aliceblue;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+#works .works-layer span a:hover{
+    color: black;
+    background-color:#FDFDFD ;
+}
+
+/*  /////////////////////// */
+#clients{
+    background-color:#F7F7F7 ;
+}
+#clients .clients-head{
+    position: relative;
+    width: 30%;
+    margin: auto;
+}
+#clients .clients-head h2::after{
+    content: "";
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: 2;
+}
+#clients .carousel-item img{
+    width: 10%;
+}
+#clients .carousel-item span{
+    color: #8D8D8D;
+}
+#clients .carousel-item blockquote{
+    color: #8D8D8D;
+}
+/* //////////////////// */
+#numbers .item p{
+  color:#8D8D8D ;
+}
+/* //////////////////////// */
+#team{
+    background-color:#F7F7F7 ;
+}
+#team .team-head{
+    position: relative;
+    width: 30%;
+    margin: auto;
+}
+#team .team-head h2::after{
+    content: "";
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: 2;
+}
+#team .item{
+    background-color: rgba(52, 52, 52,.8);
+    margin-bottom: 10px;
+}
+#team .item .item-img{
+    position: relative;
+    overflow: hidden;
+}
+
+#team .item .item-img  .item-social {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    transition: transform 1s 0.1s , z-index 1s 0.1s;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 19%;
+    z-index: -1;
+}
+#team .item .item-img img{
+    transition: transform 1s 0.1s;
+}
+#team .item .item-img:hover img{
+    transform: scale(1.2);
+}
+#team .item:hover .item-social{
+    transform: rotateY(360deg) scale(1.4,1.4);
+    z-index: 2;
+    
+}
+#team .item .item-img .item-social ul li a{
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+    
+}
+#team .item .item-img .item-social ul li:hover a{
+    background-color: aliceblue;
+    color: black;
+}
+#team .item .item-text{
+    
+    color: #fff;
+    text-align: center;
+}
+/* ///////////////////////////////// */
+#contact .contact-head{
+    position: relative;
+    width: 30%;
+    margin: auto;
+}
+#contact .contact-head h2::after{
+    content: "";
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -2;
+}
+#contact .contact-body p{
+    color:#748175 ;
+}
+#contact .contact-body span{
+   background-color:#F7F7F7 ;
+   color: var(--main-color);
+   border: 1px solid transparent;
+   border-radius: 50%;
+   transition: all 1s 0.01s;
+   padding: 15px;
+}
+#contact .contact-body .hover:hover span{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color:#F7F7F7 ;
+}
+#contact .contact-body .form .no-outline{
+    border: none;
+    outline: none;
+    background-color: #F7F7F7;
+    border: 1px solid transparent;
+    border-radius: 2%;
+    padding: 5px;
+    width: 96%;
+    display: flex;
+  
+}
+#contact .contact-body .form .textarea .width{
+    width: 98%;
+}
+#contact .contact-body .form  .button{
+    
+    
+    background-color: var(--main-color);
+    border: 1px solid transparent;
+    border-radius: 5%;
+    color: #F7F7F7;
+    transition: all 1s 0.1s;
+    padding: 10px 40px;
+}
+#contact .contact-body .form  .button:hover{
+   
+    background-color: #F7F7F7;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+/* ///////////////////////////////// */
+#footer{
+    background-color: var(--main-color);
+}
+#footer p{
+    color: #748175;
+}
+/* ///////////////////////////////// */
+
+

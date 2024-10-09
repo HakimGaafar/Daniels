@@ -1,0 +1,18 @@
+@media (max-width: 575px)
+{
+    #about .about-text {
+        margin-top: 3rem;
+    }
+    #services .services-body .design {
+        width: 47%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px)
+{
+    #about .about-text {
+        margin-top: 3rem;
+    }
+    #services .services-body .design {
+        width: 48%;
+    }
+}
